@@ -7,6 +7,8 @@ The API should look like this:
 
 Let's say you have following class defined.
 
+
+```C#
 public class Person
 {   
     public string FirstName { get; set; }
@@ -15,6 +17,7 @@ public class Person
     
     public string State { get; set; }
 }
+```
 
 And here's sample data in a CSV file.
 
@@ -25,7 +28,7 @@ Eric,Lippert,Seattle
 Joel,Spolsky,Seattle
 Eric,Sink,Illinois
 
-
+```C#
 var csvReader = new CsvReader("C:\Temp\SampleData.csv");
 var personList = csvReader.GetObjects(); 
 
@@ -35,3 +38,4 @@ public List<Person> GetObjects()
     //Implement this method. 
 }
 
+```C#
