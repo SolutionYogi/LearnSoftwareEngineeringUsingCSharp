@@ -10,3 +10,11 @@ I started learning programming in summer of 1995 and was hooked to it right away
 Since last few years, I realized that I enjoy teaching topics related to software development. It brings me tremendous joy when I see the 'aha' moment on someones face when I teach them something. 
 
 The goal of this repository is to come up with material (notes/examples/exercises) which anyone can use to learn how to develop software using C#. 
+
+Exercises:
+
+1. CsvReader
+
+2. CsvToSqlInsert 
+
+Go to respective folder to get full detail on the exercise. 
