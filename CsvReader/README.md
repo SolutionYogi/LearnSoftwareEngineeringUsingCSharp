@@ -21,12 +21,14 @@ public class Person
 
 And here's sample data in a CSV file.
 
-
+```
 FirstName, LastName, State
 SolutionYogi,,New York
 Eric,Lippert,Seattle
 Joel,Spolsky,Seattle
 Eric,Sink,Illinois
+```
+
 
 ```C#
 var csvReader = new CsvReader("C:\Temp\SampleData.csv");
