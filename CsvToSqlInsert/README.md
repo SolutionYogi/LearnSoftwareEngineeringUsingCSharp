@@ -3,15 +3,8 @@ CsvToSqlInsert
 
 Write a C# class called CsvToSqlInsert which can read a CSV file and produce INSERT statements.
 
-Let's say name of the file is 'Person.csv' which has following data:
+Look at the sample CSV file at TestData\Person.csv
 
-```
-FirstName, LastName, State, BirthYear
-SolutionYogi,,New York, 1980
-Eric,Lippert,Seattle, 1970
-Joel,Spolsky,Seattle, 1971
-Eric,Sink,Illinois, 1972
-```
 
 The program should have following API
 
@@ -23,15 +16,16 @@ insertGenerator.GenerateSqlInsertFile('C:\Temp\Person.sql');
 The file 'Person.sql' will look like this:
 
 ```
-INSERT INTO dbo.Person (FirstName, LastName, State, BirthYear) VALUES ('SolutionYogi', NULL, 'New York', 1980);
-GO
+INSERT INTO dbo.Person (FirstName, LastName, State, BlogStartDate, BirthYear, Awesomeness)
+VALUES('SolutionYogi', '','New York','10/14/2014',1980, 50)
 
-INSERT INTO dbo.Person (FirstName, LastName, State, BirthYear) VALUES ('Eric', 'Lippert', 'Seattle', 1970);
-GO
+INSERT INTO dbo.Person (FirstName, LastName, State, BlogStartDate, BirthYear, Awesomeness)
+VALUES('Eric', 'Lippert','Seattle','09/12/2003',1970, 100)
 
-INSERT INTO dbo.Person (FirstName, LastName, State, BirthYear) VALUES ('Joel', 'Spolsky', 'Seattle', 1971);
-GO
+INSERT INTO dbo.Person (FirstName, LastName, State, BlogStartDate, BirthYear, Awesomeness)
+VALUES('Joel', 'Spolsky','New York','01/01/1999',1970, 100)
 
-INSERT INTO dbo.Person (FirstName, LastName, State, BirthYear) VALUES ('Eric', 'Sink', 'Illinois', 1972);
-GO
+INSERT INTO dbo.Person (FirstName, LastName, State, BlogStartDate, BirthYear, Awesomeness)
+VALUES('Eric', 'Sink','Illinois','03/30/2003',1970, 100)
+
 ```

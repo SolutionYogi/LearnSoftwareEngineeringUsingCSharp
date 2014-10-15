@@ -16,18 +16,17 @@ public class Person
     public string LastName { get; set; }
     
     public string State { get; set; }
+    
+    public DateTime BlogStartDate { get; set; }
+    
+    public int BirthYear { get; set; }
+    
+    public int Awesomeness { get; set; }
 }
 ```
 
-And here's sample data in a CSV file.
+Sample CSV file is located at TestData\Person.csv 
 
-```
-FirstName, LastName, State
-SolutionYogi,,New York
-Eric,Lippert,Seattle
-Joel,Spolsky,Seattle
-Eric,Sink,Illinois
-```
 
 
 ```C#
