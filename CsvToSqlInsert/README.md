@@ -1,7 +1,7 @@
 CsvToSqlInsert
 ===================================
 
-Write a C# class called CsvToSqlInsert which can read a CSV file and produce INSERT statements.
+Write a C# class called CsvToSql which can read a CSV file and produce INSERT statements.
 
 Look at the sample CSV file at TestData\Person.csv
 
@@ -9,7 +9,7 @@ Look at the sample CSV file at TestData\Person.csv
 The program should have following API
 
 ```C#
-var insertGenerator = new CsvToSqlInsert('C:\Temp\Person.csv');
+var insertGenerator = new CsvToSql('C:\Temp\Person.csv');
 insertGenerator.GenerateSqlInsertFile('C:\Temp\Person.sql');
 ```
 
