@@ -18,3 +18,5 @@ Exercises:
 2. CsvToSql 
 
 Go to respective folder to get full detail on the exercise. 
+
+Go to Repository Wiki to see the different topics I am covering. 
