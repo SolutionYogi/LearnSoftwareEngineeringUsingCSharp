@@ -15,6 +15,6 @@ Exercises:
 
 1. CsvReader
 
-2. CsvToSqlInsert 
+2. CsvToSql 
 
 Go to respective folder to get full detail on the exercise. 
