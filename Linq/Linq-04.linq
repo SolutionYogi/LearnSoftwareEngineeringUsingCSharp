@@ -51,7 +51,7 @@ void Main()
 
 public bool IsEven(int number)
 {
-	return number % 2 == 0;
+	return number % 2 == 0; //MEAT OF THE LOGIC. EVERYTHING ELSE IS CEREMONY.
 }
 
 public bool IsOdd(int number)

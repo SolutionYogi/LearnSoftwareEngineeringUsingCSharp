@@ -23,6 +23,7 @@ public delegate bool IntegerFilter(int i);
 
 public static class ExtensionsMethods
 {
+	//TRUE EQUIVALENT of LINQ's WHERE METHOD. 
 	public static IEnumerable<T> Filter<T>(this IEnumerable<T> items, Func<T, bool> filter)
 	{	
 		foreach(var item in items)
