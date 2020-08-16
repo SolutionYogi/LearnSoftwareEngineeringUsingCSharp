@@ -21,8 +21,6 @@ void Main()
 	shortNames.Dump();
 }
 
-public delegate bool IntegerFilter(int i);
-
 public static class ExtensionsMethods
 {
 	public static List<T> Filter<T>(this List<T> items, Func<T, bool> filter)
